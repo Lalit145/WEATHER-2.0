@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(13, 207, 142);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding:12px 16px;
+    border-radius: 14px;
+    background-color: #e6f5fb;
+    color: black;
+}
+.search-box button{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(181, 180, 180);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+.search-box button:hover{
+    background-color: rgb(214, 213, 213);
+    
+}
+.weather-body{
+    /* background-color: #e6f5fb;
+     */
+     background-color: rgb(192, 190, 190);
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.weather-body img{
+    width: 60%;
+}
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+.temp{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.temp sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 300;
+}
+.des{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.humidity, .pressure, .wind-speed{
+    /* width: 30%; */
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    background-color: rgb(151, 150, 150);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.humidity i, .pressure i, .wind-speed i{
+    height: 40px;
+    font-size: 30px;
+}
+.humidity:hover, .pressure:hover, .wind-speed:hover{
+    background-color: rgb(214, 213, 213);
+    cursor: pointer;
+    
+}
+#selUser{
+    width: 200px;
+    padding: 5px;
+  }
+.current{
+    background-color: rgb(192, 190, 190);
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    /* color: white; */
+}
+.current:hover{
+    background-color: rgb(214, 213, 213);
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Select2 CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> 
+
+    <!-- jQuery --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- Select2 JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <!-- <input type="text" placeholder="Enter your location" class="input-box" id="input-box"> -->
+                
+
+<!-- <input type="text">                Dropdown  -->
+<select id='selUser' style='width: 200px;'>
+    <!-- <input type="text" placeholder="Select location"> -->
+    <option value='0'>Select State</option> 
+    <option value='1'>Andhra Pradesh</option> 
+    <option id='selUse' value='2'>Arunachal Pradesh</option> 
+    <option value='3'>Assam</option> 
+    <option value='4'>Bihar</option> 
+    <option value='5'>Chhattisgarh</option> 
+    <option value='6'>Goa</option> 
+    <option value='7'>Gujarat</option>
+    <option value='8'>Haryana</option>
+    <option value='9'>Himachal Pradesh</option>
+    <option value='10'>Jammu and Kashmir</option>
+    <option value='11'>Jharkhand</option>
+    <option value='12'>Karnataka</option>
+    <option value='13'>Kerala</option>
+    <option value='14'>Madhya Pradesh</option>
+    <option value='15'>Maharashtra</option>
+    <option value='16'>Manipur</option>
+    <option value='17'>Meghalaya</option>
+    <option value='18'>Mizoram</option>
+    <option value='19'>Nagaland</option>
+    <option value='20'>Odisha</option>
+    <option value='21'>Punjab</option>
+    <option value='22'>Rajasthan</option>
+    <option value='23'>Sikkim</option>
+    <option value='24'>Tamil Nadu</option> 
+    <option value='25'>Telangana</option> 
+    <option value='26'>Tripura</option> 
+    <option value='27'>Uttarakhand</option> 
+    <option value='28'>Uttar Pradesh</option> 
+    <option value='29'>West Bengal</option> 
+    <option value='30'>Andaman and Nicobar Islands</option> 
+    <option value='31'>Chandigarh</option> 
+    <option value='31'>Dadra and Nagar Haveli</option>
+    <option value='32'>Daman and Diu</option>
+    <option value='33'>Delhi</option>
+    <option value='34'>Lakshadweep</option>
+    
+</select>
+<!-- <input type="text" id="searchInput" placeholder="Search...">
+<ul id="itemList">
+  <li>Andhra pradesh</li>
+  <li>West Bengal</li>
+  <li>Uttarpradesh</li>
+  more list items
+</ul> -->
+
+<button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+<!-- <input type='button' value='Seleted option' id='but_read'> -->
+    
+<br/>
+
+        <div id='result'></div>
+            </div>
+            <button class="current" id="current">Current Location</button>
+        </div>
+        <div class="weather-body">
+                <img src="cloud-computing.png" alt="" class="weather-img" id="weather-img">
+                <div class="weather-box">
+                    <p class="temp" id="temperature">0 <sup>°C</sup></p>
+                    <p class="des" id="description">Search by location</p>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span id="humidity">0%</span>
+                        <p>HUMIDITY</p>
+                    </div>
+                    <div class="pressure">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                        <span id="pressure">0.0</span>
+                        <p>PRESSURE</p>
+                    </div>
+                    <div class="wind-speed">
+                        <i class="fa-solid fa-wind"></i>
+                        <span id="wind-speed">0KM/h</span>
+                        <p>WIND SPEED</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ad95c862bc.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
